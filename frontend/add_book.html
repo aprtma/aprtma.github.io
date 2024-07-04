@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Buku - Book Haven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Book Haven</h2>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="data_books.html">Data Buku</a></li>
+            <li><a href="orders.html">Daftar Pesanan</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2>Tambah Buku</h2>
+        <form id="add-book-form">
+            <label for="new-book-name">Nama Buku:</label>
+            <input type="text" id="new-book-name" name="new-book-name" required>
+            <label for="new-book-publisher">Penerbit:</label>
+            <input type="text" id="new-book-publisher" name="new-book-publisher" required>
+            <label for="new-book-year">Tahun Terbit:</label>
+            <input type="text" id="new-book-year" name="new-book-year" required>
+            <label for="book-cover">Gambar Sampul:</label>
+            <input type="file" id="book-cover" name="book-cover" required>
+            <button type="button" id="add-book-button">Tambah Buku</button>
+        </form>
+    </div>
+
+    <script src="../backend/script.js"></script>
+</body>
+</html>
